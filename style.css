@@ -128,7 +128,7 @@ section.feature {
 .feature ul.rb li {
     list-style: none;
     margin: auto;
-    margin-left: 15em;
+    margin-left: 20em;
     min-height: 50px;
     border-left: 1px dashed #fff;
     padding: 0 0 0px 30px;
