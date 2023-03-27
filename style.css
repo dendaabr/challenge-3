@@ -130,8 +130,8 @@ section.feature {
     margin: auto;
     margin-left: 20em;
     min-height: 50px;
-    border-left: 1px dashed #fff;
-    padding: 0 0 0px 30px;
+    border-left: 1px groove #fff;
+    padding: 0 0 20px 20px;
     position: relative;
 }
 
@@ -144,7 +144,7 @@ section.feature {
     left: -15px;
     top: -5px;
     content: " ";
-    border: 5px solid rgba(255, 255, 255, 1);
+    border: 3px solid rgba(255, 255, 255, 1);
     border-radius: 400%;
     background: #6d6f6e;
     height: 20px;
@@ -152,12 +152,7 @@ section.feature {
     transition: all 500ms ease-in-out;
 }
 
-.feature ul.rb li:hover::before {
-    border-color: #232931;
-    transition: all 1000ms ease-in-out;
-}
-
-ul.rb li .timestamp {
+ul.rb li .textf {
     color: #8a8d8c;
     position: relative;
     width: 300px;
@@ -166,38 +161,158 @@ ul.rb li .timestamp {
 
 section.sq {
     width: 100%;
-    height: 98%;
+    height: 100%;
     background-image: url(assets/requirements.png);
     background-repeat: no-repeat;
-    background-size: 1440px;
+    background-position: center center;
+    background-size: cover;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+}
 
+section.sq span {
+    height: 100%;
+    margin-left: 3%;
+    font-family: Open sans;
+    color: white;
+    font-size: 24px;
+    font-family: Arial, Helvetica, Open sans;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rtg {
+    font-size: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-family: 'Open Sans';
+    margin-top: 5%;
+}
+
+section.sq h1 {
+    width: 40%;
+    font-size: 20;
+    margin-top: 10%;
+    font-weight: normal;
+    margin-left: 5%;
+}
+
+section.sq span h3 {
+    width: 40%;
+    font-size: 26;
+    color: yellow;
+}
+
+section.sq span h4 {
+    font-size: 20;
 }
 
 section.topscore {
     width: 100%;
     height: 98%;
-    background-image: url(assets/top-score-bg.png);
+    /* background-image: url(assets/top-score-bg.png); */
     background-repeat: no-repeat;
-    background-size: 1440px;
+    background-position: center center;
+    background-size: cover;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
 
+}
+
+section.topscore span {
+    width: 100%;
+    height: 98%;
+    color: white;
 }
 
 section.quotes {
     width: 100%;
-    height: 98%;
+    height: 100%;
     background-image: url(assets/newsletter.png);
     background-repeat: no-repeat;
-    background-size: 1440px;
+    background-position: center center;
+    background-size: cover;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
 
+}
+
+.quotes div {
+    padding-top: 15%;
+}
+
+.quotes div img {
+    padding-top: 1%;
+    padding-left: 15%;
+    padding-right: 5%;
+    width: 75%;
+}
+
+.quotes form {
+    width: 40%;
+    margin-top: 15%;
+    font-family: Open sans;
+}
+
+.quotes form div {
+    height: 40%;
+    font-family: Open sans;
+}
+
+.quotes input[text],
+input[type=submit] {
+    border-radius: 15px;
+    color: black;
+    background-color: yellow;
+    font-weight: bold;
+    font-size: 11px;
+    padding: 10px 17px 10px 17px;
+    display: inline-block;
+    box-sizing: border-box;
+    border-color: yellow;
+
+}
+
+.quotes input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+.quotes form div h2 {
+    width: 40%;
+    font-size: 46;
+    color: white;
+}
+
+.quotes h1 {
+    font-size: 45px;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-top: 0;
+
+}
+
+.quotes form p {
+    font-size: 11px;
+    color: white;
+    margin-top: 0;
+    font-weight: normal;
+}
+
+.quotes form h3 {
+    width: 20%;
+    font-size: 11px;
+    color: white;
+    margin-bottom: 0;
+    margin-right: 70%;
 }
 
 #titlegame {
@@ -310,15 +425,14 @@ header {
 }
 
 .menu span {
-    width: 10%;
-    padding-left: 1px;
+    width: 13%;
+    padding-left: 15px;
     font-family: 'Open Sans';
     font-weight: bold;
-    font-size: 14px;
-    padding-inline: 1rem;
+    font-size: 12px;
     color: white;
     background: local;
-    margin-top: 7px;
+    margin-top: 10px;
 }
 
 .menu span a {
@@ -333,6 +447,19 @@ header {
 .btn {
     border-radius: 7px;
     padding: 15px 60px;
+    margin-left: 20px;
+    margin-top: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    background: orange;
+    border: 1px solid orange;
+
+}
+
+.btnsubsrib {
+    width: 20%;
+    border-radius: 7px;
+    font-family: Open Sans;
     margin-left: 20px;
     margin-top: 30px;
     color: rgb(0, 0, 0);
