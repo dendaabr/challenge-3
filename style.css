@@ -172,7 +172,8 @@ section.sq {
     justify-content: center;
 }
 
-.sq span {
+.sq div {
+    width: 100%;
     height: 100%;
     margin-left: 3%;
     font-family: Open sans;
@@ -194,30 +195,45 @@ section.sq {
     color: white;
     font-weight: bold;
     font-family: 'Open Sans';
-    margin-top: 5%;
+    margin-top: 30px;
+
+}
+
+.sq table,
+td,
+th {
+    border: 1px solid #8a8d8c;
+    border-collapse: collapse;
+    width: 500px;
+    padding: 20px;
+    margin-left: 80px;
+    color: white;
+    font-family: open sans;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: start;
+}
+
+.sqfield {
+    color: orange;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+#sq-lebel {
+    padding-top: 15px;
+    color: white;
+    font-size: 16px;
+    text-align: start;
 }
 
 .sq h1 {
-    width: 40%;
+    width: 400px;
     font-size: 20;
-    margin-top: 10%;
-    font-weight: normal;
-    margin-left: 5%;
-}
-
-.sq p {
-    font-size: 11px;
-}
-
-.sq div {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    margin-left: 70px;
     margin-top: 0;
-    flex-grow: 1;
-    flex-shrink: 2;
-    flex-basis: 30%;
+    font-weight: normal;
+    margin-left: 80px;
 }
 
 section.topscore {
@@ -279,7 +295,8 @@ section.topscore {
     font-family: Open sans;
     font-weight: normal;
     font-size: 11px;
-    padding-left: 10px;
+    padding-left: 0px;
+    text-align: start;
 }
 
 .boxtimescore {
@@ -396,42 +413,8 @@ section.quotes {
     width: 75%;
 }
 
-.quotes form {
-    width: 40%;
-    margin-top: 15%;
-    font-family: Open sans;
-}
-
-.quotes form div {
-    height: 40%;
-    font-family: Open sans;
-}
-
-.quotes input[text],
-input[type=submit] {
-    border-radius: 15px;
-    color: black;
-    background-color: yellow;
-    font-weight: bold;
-    font-size: 11px;
-    padding: 10px 17px 10px 17px;
-    display: inline-block;
-    box-sizing: border-box;
-    border-color: yellow;
-
-}
-
-.quotes input[type=submit]:hover {
-    opacity: 0.8;
-}
-
-.quotes form div h2 {
-    width: 40%;
-    font-size: 46;
-    color: white;
-}
-
 .quotes h1 {
+    width: 500px;
     font-size: 45px;
     font-weight: normal;
     margin-bottom: 0;
@@ -439,15 +422,41 @@ input[type=submit] {
 
 }
 
-.quotes form p {
+#quotesboxx {
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    width: 200px;
+    background: rgba(255, 255, 255, 0.062);
+    border-radius: 5px;
+    color: #8a8d8c;
+    font-size: 12px;
+
+}
+
+.boxquotes {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.quoteslebel {
+    color: yellow;
+    font-size: 15px;
+}
+
+.quotes p {
+    width: 500px;
     font-size: 11px;
     color: white;
     margin-top: 0;
     font-weight: normal;
 }
 
-.quotes form h3 {
-    width: 20%;
+.quotes h3 {
+    width: 100px;
     font-size: 11px;
     color: white;
     margin-bottom: 0;
