@@ -403,7 +403,11 @@ section.quotes {
 }
 
 .quotes div {
-    padding-top: 15%;
+    padding-top: 5%;
+}
+
+.conquotes {
+    color: #eaf6ff;
 }
 
 .quotes div img {
@@ -424,22 +428,29 @@ section.quotes {
 
 #quotesboxx {
     box-sizing: border-box;
-    padding-top: 10px;
+    height: 55px;
+    padding-top: 5px;
     padding-bottom: 10px;
     padding-left: 10px;
-    width: 200px;
+    width: 180px;
     background: rgba(255, 255, 255, 0.062);
-    border-radius: 5px;
+    border-radius: 10px;
     color: #8a8d8c;
-    font-size: 12px;
-
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.boxquotes {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+#emailgw {
+    height: 10px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: orange;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .quoteslebel {
@@ -461,6 +472,22 @@ section.quotes {
     color: white;
     margin-bottom: 0;
     margin-right: 70%;
+}
+
+.btn-subsrib1 {
+    border-radius: 100px;
+    padding: 5px 20px;
+    margin-left: 20px;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    background: orange;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.quotessubcribe {
+    display: flex;
+    flex-direction: row;
 }
 
 #titlegame {
@@ -604,19 +631,6 @@ header {
 
 }
 
-.btnsubsrib {
-    width: 20%;
-    border-radius: 7px;
-    font-family: Open Sans;
-    margin-left: 20px;
-    margin-top: 30px;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    background: orange;
-    border: 1px solid orange;
-
-}
-
 .signuplogin {
     width: 20%;
     font-family: 'Open Sans';
@@ -632,137 +646,4 @@ header {
 .signuplogin span {
     padding-inline: 1rem;
     background: local;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*---------------------------------------
-  RESPONSIVE STYLES               
------------------------------------------*/
-@media screen and (min-width: 1600px) {
-    .news-two-column {
-        min-height: 232.5px;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    h1 {
-        font-size: 48px;
-    }
-
-    h2 {
-        font-size: 36px;
-    }
-
-    h3 {
-        font-size: 32px;
-    }
-
-    h4 {
-        font-size: 28px;
-    }
-
-    h5 {
-        font-size: 20px;
-    }
-
-    h6 {
-        font-size: 18px;
-    }
-
-    .navbar {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
-    .section-padding {
-        padding-top: 6rem;
-        padding-bottom: 6rem;
-    }
-
-    .team-thumb {
-        left: 0;
-        width: auto;
-    }
-
-    .news-two-column {
-        height: auto !important;
-        min-height: inherit;
-    }
-
-    .news .col-12 .news-two-column:first-child {
-        margin-bottom: 38px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .news-detail-title {
-        font-size: 36px;
-    }
-}
-
-@media screen and (max-width: 360px) {
-    h1 {
-        font-size: 32px;
-    }
-
-    .heroText p {
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 359px) {
-    .news-detail-title {
-        font-size: 22px;
-    }
 }
