@@ -572,6 +572,7 @@ section.quotes {
     font-weight: bold;
     background: orange;
     font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
 }
 
 .quotessubcribe {
@@ -693,6 +694,7 @@ nav {
 
 .btn-grup {
     margin-top: 40px;
+    cursor: pointer;
 }
 
 .btn {
@@ -704,6 +706,7 @@ nav {
     font-weight: bold;
     background: orange;
     border: 1px solid orange;
+    cursor: pointer;
 
 }
 
