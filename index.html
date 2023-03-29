@@ -48,9 +48,25 @@
             <span>What's so special ?
                 <p>THE GAMES</p>
             </span>
-            <img src="assets/switch-left.svg" width="20px" style="padding-bottom: 30%; padding-right: 10px;">
-            <img src="assets/rockpaperstrategy-1600.jpg" width="55%" height="45%" style="margin: 50px 0px;">
-            <img src="assets/switch-right.svg" width="18px" style="padding-bottom: 30%; padding-left: 10px;">
+
+            <span class="slideshow-about">
+                <div class="mySlides fade">
+                    <img src="assets/rockpaperstrategy-1600.jpg" width="700px" height="400px">
+                </div>
+                <div class="mySlides fade">
+                    <img src="assets/jada-griffin.jpg" width="700px" height="400px">
+                </div>
+                <div class="mySlides fade">
+                    <img src="assets/aaron-williams.jpg" width="700px" height="400px">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)"><img src="assets/switch-left.svg" width="20px"></a>
+                <a class="next" onclick="plusSlides(1)"><img src="assets/switch-right.svg" width="18px"></a>
+                <div style="text-align: center;">
+                    <a class="dot" onclick="currentSlide(1)"></a>
+                    <a class="dot" onclick="currentSlide(2)"></a>
+                    <a class="dot" onclick="currentSlide(3)"></a>
+                </div>
+            </span>
         </section>
         <section id="feature" class="feature">
             <span>
@@ -124,10 +140,9 @@
                     <div class="timecontent1">
                         <div class="timeprofil">
                             <img src="assets/evan-lahti.jpg">
-                            <label class="namaprofil">Evan Lahti
+                            <label class="namaprofil">Evan Lahti <a class="imgbox">......</a>
                                 <div class="lebelprofil">PC Gamer</div>
                             </label>
-                            <!-- <img src="assets/twitter.svg"> -->
                         </div>
                         <div>
                             <h3>"One of my gaming hinglight of the yeard"</h3>
@@ -139,7 +154,7 @@
                     <div class="timecontent2">
                         <div class="timeprofil">
                             <img src="assets/jada-griffin.jpg">
-                            <label class="namaprofil">Jada Griffin
+                            <label class="namaprofil">Jada Griffin <a class="imgbox">......</a>
                                 <div class="lebelprofil">Nerdreactor</div>
                             </label>
                         </div>
@@ -153,7 +168,7 @@
                     <div class="timecontent3">
                         <div class="timeprofil">
                             <img src="assets/aaron-williams.jpg">
-                            <label class="namaprofil">Aaron Williams Lahti
+                            <label class="namaprofil">Aaron Williams Lahti<a class="imgbox">......</a>
                                 <div class="lebelprofil">Uproxx</div>
                             </label>
                         </div>
@@ -189,15 +204,15 @@
         <footer class="footer">
             <div class="footercontent">
                 <div class="footerlink">
-                    <span>home</span>
-                    <span>about</span>
-                    <span>game features</span>
-                    <span>System requirements</span>
-                    <span>quotes</span>
-                    <span><img src="assets/twitter.svg"></span>
-                    <span><img src="assets/facebook.svg"></span>
-                    <span><img src="assets/vector.svg"></span>
-                    <span><img src="assets/twitch.svg"></span>
+                    <span><a href="#titlegame">home</a></span>
+                    <span><a href="#about">about</a></span>
+                    <span><a href="#feature">game features</a></span>
+                    <span><a href="#sq">System requirements</a></span>
+                    <span><a href="#quotes">quotes</a></span>
+                    <span><a href="https://www.twitter.com/"><img src="assets/twitter.svg"></a></span>
+                    <span><a href="https://www.facebook.com/"><img src="assets/facebook.svg"></a></span>
+                    <span><a href="https://www.youtube.com/"><img src="assets/vector.svg"></a></span>
+                    <span><a href="#"><img src="assets/twitch.svg"></a></span>
 
                 </div>
             </div>
@@ -207,6 +222,35 @@
             </div>
         </footer>
     </main>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
 </body>
 
 
